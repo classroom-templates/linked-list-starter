@@ -36,7 +36,7 @@ int main() {
     for (int i = 0; i < numTestData; i++) {
         testdata.getDataElement(i, &tmpData);
         cout << "adding " << tmpData.id << ": " << tmpData.data << "... ";
-        if (list.addNode(tmpData.id, tmpData.data)) {
+        if (list.addNode(tmpData.id, &(tmpData.data))) {
             cout << "success" << endl;
         } else {
             cout << "failed" << endl;

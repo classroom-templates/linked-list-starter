@@ -27,7 +27,7 @@ testData::~testData() {
     for (int i = 0; i < numData; i++) {
         delete data[i];
     }
-    delete data[];
+    delete[] data;
 }
 
 /*
